@@ -67,10 +67,6 @@
 			}
 		}
 
-		.infinite.animated.pulse {
-			-webkit-animation-duration: 1.7s;
-			animation-duration: 1.7s;
-		}
 	</style>
 
 </head>
@@ -233,7 +229,7 @@
 									профиль, и мы уверены, что наши барберы делают это лучше всех. Как сказал однажды знаменитый
 									Ральф Лорен: «Какой бы Вы образ жизни ни вели, у вас должен быть свой собственный стиль, свой
 									собственный мир»</p>
-								<img src="images/about/sign.png" alt="Image" width="200">
+								<img src="images/about/sign.png" alt="Image" width="500" height="233">
 							</div>
 							<div class="col-md-3 col-6 d-none d-md-block">
 								<img src="images/about/2.jpg" alt="Image">
@@ -906,33 +902,35 @@
 
 									<div class="row">
 										<div class="col-md-6 form-group">
-											<input type="text" id="template-contactform-name" name="template-contactform-name"
-												value="" class="sm-form-control border-form-control required" placeholder="Name" />
-										</div>
-										<div class="col-md-6 form-group">
-											<input type="email" id="template-contactform-email" name="template-contactform-email"
-												value="" class="required email sm-form-control border-form-control"
-												placeholder="Email Address" />
+											<label for="template-contactform-name"></label><input class="sm-form-control border-form-control required"
+																								  id="template-contactform-name"
+																								  placeholder="Name-contact" type="text"
+																								  value="Введите Имя"/>
+
+											<label for="template-contactform-email"></label><input type="email" id="template-contactform-email"
+																								   name="template-contactform-email"
+																								   value="Введите e-mail" class="required email sm-form-control border-form-control"
+																								   placeholder="Email Address"/>
 										</div>
 
 										<div class="w-100"></div>
 
 										<div class="col-md-4 form-group">
-											<input type="text" id="template-contactform-phone" name="template-contactform-phone"
-												value="" class="sm-form-control border-form-control" placeholder="Phone" />
+											<label for="template-contactform-phone"></label><input type="text" id="template-contactform-phone" name="template-contactform-phone"
+																								   value="" class="sm-form-control border-form-control" placeholder="Phone" />
 										</div>
 
 										<div class="col-md-8 form-group">
-											<input type="text" id="template-contactform-subject" name="subject" value=""
-												class="required sm-form-control border-form-control" placeholder="Subject" />
+											<label for="template-contactform-subject"></label><input type="text" id="template-contactform-subject" name="subject" value=""
+																									 class="required sm-form-control border-form-control" placeholder="Subject" />
 										</div>
 
 										<div class="w-100"></div>
 
 										<div class="col-12 form-group">
-											<textarea class="required sm-form-control border-form-control"
-												id="template-contactform-message" name="template-contactform-message" rows="7"
-												cols="30" placeholder="Your Message"></textarea>
+											<label for="template-contactform-message"></label><textarea class="required sm-form-control border-form-control"
+																										id="template-contactform-message" name="template-contactform-message" rows="7"
+																										cols="30" placeholder="Your Message"></textarea>
 										</div>
 
 										<div class="col-12 form-group">
@@ -942,8 +940,8 @@
 										</div>
 
 										<div class="col-12 form-group d-none">
-											<input type="text" id="template-contactform-botcheck"
-												name="template-contactform-botcheck" value="" class="sm-form-control" />
+											<label for="template-contactform-botcheck"></label><input type="text" id="template-contactform-botcheck"
+																									  name="template-contactform-botcheck" value="" class="sm-form-control" />
 										</div>
 									</div>
 
