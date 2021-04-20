@@ -66,7 +66,6 @@
 				opacity: 1;
 			}
 		}
-
 	</style>
 
 </head>
@@ -148,6 +147,7 @@
 		<!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element slider-parallax page-section min-vh-60 min-vh-md-100 include-header">
+			<h2 hidden>Слайдер</h2>
 			<div class="slider-inner"
 				style="background: url('images/hero/hero.jpg') center center no-repeat; background-size: cover;">
 
@@ -862,61 +862,97 @@
 				============================================= -->
 				<div id="contact" class="row align-items-stretch page-section pt-0 clearfix">
 
-					<div class="col-lg-6 px-0 d-none d-md-block">
+					<div class="col-lg-6 px-0 d-none d-md-block ml-2">
+						<div class="gmap h-100" data-address="Rosa-Khutor, Russia" data-zoom="1"
+							data-markers="[{ address: 'Rosa-Khutor, Russia', icon:{ image: 'images/map-marker.png', iconsize: [32, 39], iconanchor: [16,36] } }]"
+							data-styles="[{'featureType':'all','elementType':'labels.text.fill','stylers':[{'saturation':36},{'color':'#000000'},{'lightness':40}]},{'featureType':'all','elementType':'labels.text.stroke','stylers':[{'visibility':'on'},{'color':'#000000'},{'lightness':16}]},{'featureType':'all','elementType':'labels.icon','stylers':[{'visibility':'off'}]},{'featureType':'administrative','elementType':'geometry.fill','stylers':[{'color':'#000000'},{'lightness':20}]},{'featureType':'administrative','elementType':'geometry.stroke','stylers':[{'color':'#000000'},{'lightness':17},{'weight':1.2}]},{'featureType':'landscape','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':20}]},{'featureType':'poi','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':21}]},{'featureType':'road.highway','elementType':'geometry.fill','stylers':[{'color':'#000000'},{'lightness':17}]},{'featureType':'road.highway','elementType':'geometry.stroke','stylers':[{'color':'#000000'},{'lightness':29},{'weight':0.2}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':18}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':16}]},{'featureType':'transit','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':19}]},{'featureType':'water','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':17}]}]">
 							<!-- Яндекс карта -->
-						
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add3fd1c95b9146a2d94f0c7b38310e64f03c816931db80ef299d62dadf272e34&amp;width=500&amp;height=576&amp;lang=ru_RU&amp;scroll=true"></script>
-					
-						 	<!-- Конец яндекс карты -->
-					</div>
-
-					<div class="col-lg col-padding" style="background-color: #F5F5F5;">
-						<div>
-							<div class="container-fluid">
-								  <div class="row py-5">
-									<div class="col-sm-4">
-									  <h3 class="mb-3">Контакты</h3>
-									  <h5>Адрес:</h5>
-									  <p>г. Сочи, Красная Поляна, набережная Времена Года, 1</p>
-									  <h5>Телефон:</h5>
-									  <p>+7 (862) 145-53-50</p>
-									  <h5>E-mail:</h5>
-									  <p>barber-2020@mail.ru</p>
-									  <h5>Время работы:</h5>
-									  <p>Круглосуточно.</p>
-									</div>
-									<div class="col-sm-8">
-									  <h3 class="text-center mb-3">Форма обратной связи</h3>
-									  <form action="php/HenderMail.php">
-										<div class="my-3">
-										  <input name="name" type="text" placeholder="Имя" class="form-control">
-										</div>
-										<div class="my-3">
-										  <input name="email" type="email" placeholder="E-mail" class="form-control">
-										</div>
-										<div class="my-3">
-										  <textarea name="text"placeholder="Ваш текст" class="form-control"></textarea>
-										</div>
-										<input type="submit" class="form-control btn btn-primary">
-									  </form>
-									</div>
-								  </div>
-								</div>
-												
-
-								
+							<script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add3fd1c95b9146a2d94f0c7b38310e64f03c816931db80ef299d62dadf272e34&amp;width=950&amp;height=776&amp;lang=ru_RU&amp;scroll=true"></script>
+							<!-- Конец яндекс карты -->
 						</div>
 					</div>
 
-				</div>
+					<div class="col-lg col-padding" style="background-color: #F9F9F9;">
+						<div>
+							<h3 class="text-uppercase">Наши контакты:</h3>
+							<div class="row topmargin-sm clearfix" style="font-size: 16px; line-height: 1.7;">
+								<div class="col-lg-6">
+									<address style="line-height: 1.7;">
+										<strong>Россия:</strong><br>
+										г. Сочи, Красная Поляна,<br>
+										набережная Времена Года, 1<br>
+									</address>
+								</div>
+								<div class="col-lg-6">
+									<strong>Телефон: </strong><a href="tel:+78621455350"><span><b>+7 (862)
+												145-53-50</b></span></a><br>
+									<strong>Email: </strong><a
+										href="mailto:barber-2020@mail.ru"><span><b>barber-2020@mail.ru</b></span></a><br>
+									<strong>Время работы:
+									</strong>
+									<p>Круглосуточно.</p>
+								</div>
+							</div>
 
-				<a href="#" class="button button-full bg-color font-secondary center"
-					style="padding: 60px 0; background-image: url('images/sections/4.jpg'); background-repeat: no-repeat; background-position: 10% 50%; background-size: cover;">
-					<div class="container clearfix">
-						Забронируйте свой визит online и сэкономьте до <strong>25% стоимости</strong> &rarr;
+							<div class="form-widget">
+
+								<div class="form-result"></div>
+								<h3 class="text-left mb-3">Форма обратной связи:</h3>
+								<form onsubmit="sendMail(this); return false;" class="mb-0" id="template-contactform"
+									name="template-contactform">
+
+									<div class="form-process">
+										<div class="css3-spinner">
+											<div class="css3-spinner-scaler"></div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<input type="text" id="template-contactform-name" name="name"
+												class="sm-form-control border-form-control required" placeholder="Имя" />
+										</div>
+										<div class="col-md-6 form-group">
+											<input type="email" id="template-contactform-email" name="email"
+												class="required email sm-form-control border-form-control" placeholder="Email" />
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-12 form-group">
+											<textarea class="required sm-form-control border-form-control"
+												id="template-contactform-message" name="template-contactform-message" rows="7"
+												cols="30" placeholder="Ваш текст"></textarea>
+										</div>
+
+										<div class="col-12 form-group">
+											<button class="button button-large button-color ml-0 topmargin-sm" type="submit"
+												id="template-contactform-submit" name="template-contactform-submit"
+												value="submit">Отправить сообщение</button>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="template-contactform-botcheck"
+												name="template-contactform-botcheck" value="" class="sm-form-control" />
+										</div>
+									</div>
+
+									<input type="hidden" name="prefix" value="template-contactform-">
+
+								</form>
+							</div>
+						</div>
+
 					</div>
-				</a>
 
+					<a href="#" class="button button-full bg-color font-secondary center"
+						style="padding: 60px 0; background-image: url('images/sections/4.jpg'); background-repeat: no-repeat; background-position: 10% 50%; background-size: cover;">
+						<div class="container clearfix">
+							Забронируйте свой визит online и сэкономьте до <strong>25% стоимости</strong> &rarr;
+						</div>
+					</a>
+				</div>
 			</div>
 		</section><!-- #content end -->
 
@@ -1082,6 +1118,25 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<!-- Скрипт для формы отправки письма
+	============================================= -->
+	<script>
+		function sendMail(form) {
+			let formData = new FormData(form);
+			fetch('php/HenderMail.php', {
+				method: 'POST',
+				body: formData
+			}).then((response) => { return response.text() })
+				.then((result) => {
+					if (result == 'success') {
+						form.innerHTML = '<h1>Ваше сообщение отправлено</h1>';
+					} else {
+						form.innerHTML = '<h1>Произошла ошибка</h1>';
+					}
+				})
+		}
+	</script>
 
 </body>
 
