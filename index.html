@@ -862,13 +862,13 @@
 				============================================= -->
 				<div id="contact" class="row align-items-stretch page-section pt-0 clearfix">
 
-					<div class="col-lg-6 px-0 d-none d-md-block ml-2">
+					<div class="col-lg-6 px-0 d-none d-md-block ml-3">
 						<div class="gmap h-100" data-address="Rosa-Khutor, Russia" data-zoom="1"
-							data-markers="[{ address: 'Rosa-Khutor, Russia', icon:{ image: 'images/map-marker.png', iconsize: [32, 39], iconanchor: [16,36] } }]"
+							data-markers="[{ address: 'Rosa-Khutor, Russia', icon:{ image: 'images/map-marker.png', iconsize: [32, 39], iconanchor: [16,36] }}]"
 							data-styles="[{'featureType':'all','elementType':'labels.text.fill','stylers':[{'saturation':36},{'color':'#000000'},{'lightness':40}]},{'featureType':'all','elementType':'labels.text.stroke','stylers':[{'visibility':'on'},{'color':'#000000'},{'lightness':16}]},{'featureType':'all','elementType':'labels.icon','stylers':[{'visibility':'off'}]},{'featureType':'administrative','elementType':'geometry.fill','stylers':[{'color':'#000000'},{'lightness':20}]},{'featureType':'administrative','elementType':'geometry.stroke','stylers':[{'color':'#000000'},{'lightness':17},{'weight':1.2}]},{'featureType':'landscape','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':20}]},{'featureType':'poi','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':21}]},{'featureType':'road.highway','elementType':'geometry.fill','stylers':[{'color':'#000000'},{'lightness':17}]},{'featureType':'road.highway','elementType':'geometry.stroke','stylers':[{'color':'#000000'},{'lightness':29},{'weight':0.2}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':18}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':16}]},{'featureType':'transit','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':19}]},{'featureType':'water','elementType':'geometry','stylers':[{'color':'#000000'},{'lightness':17}]}]">
 							<!-- Яндекс карта -->
 							<script type="text/javascript" charset="utf-8" async
-								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add3fd1c95b9146a2d94f0c7b38310e64f03c816931db80ef299d62dadf272e34&amp;width=950&amp;height=776&amp;lang=ru_RU&amp;scroll=true"></script>
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add3fd1c95b9146a2d94f0c7b38310e64f03c816931db80ef299d62dadf272e34&amp;width=1000&amp;height=776&amp;lang=ru_RU&amp;scroll=true"></script>
 							<!-- Конец яндекс карты -->
 						</div>
 					</div>
@@ -898,6 +898,7 @@
 							<div class="form-widget">
 
 								<div class="form-result"></div>
+
 								<h3 class="text-left mb-3">Форма обратной связи:</h3>
 								<form onsubmit="sendMail(this); return false;" class="mb-0" id="template-contactform"
 									name="template-contactform">
@@ -910,10 +911,13 @@
 
 									<div class="row">
 										<div class="col-md-6 form-group">
+											<label for="template-contactform-name"></label>
 											<input type="text" id="template-contactform-name" name="name"
 												class="sm-form-control border-form-control required" placeholder="Имя" />
 										</div>
+
 										<div class="col-md-6 form-group">
+											<label for="template-contactform-email"></label>
 											<input type="email" id="template-contactform-email" name="email"
 												class="required email sm-form-control border-form-control" placeholder="Email" />
 										</div>
@@ -921,6 +925,7 @@
 										<div class="w-100"></div>
 
 										<div class="col-12 form-group">
+											<label for="template-contactform-message"></label>
 											<textarea class="required sm-form-control border-form-control"
 												id="template-contactform-message" name="template-contactform-message" rows="7"
 												cols="30" placeholder="Ваш текст"></textarea>
@@ -933,6 +938,7 @@
 										</div>
 
 										<div class="col-12 form-group d-none">
+											<label for="template-contactform-botcheck"></label>
 											<input type="text" id="template-contactform-botcheck"
 												name="template-contactform-botcheck" value="" class="sm-form-control" />
 										</div>
@@ -943,8 +949,9 @@
 								</form>
 							</div>
 						</div>
-
 					</div>
+
+				</div>
 
 					<a href="#" class="button button-full bg-color font-secondary center"
 						style="padding: 60px 0; background-image: url('images/sections/4.jpg'); background-repeat: no-repeat; background-position: 10% 50%; background-size: cover;">
@@ -952,7 +959,7 @@
 							Забронируйте свой визит online и сэкономьте до <strong>25% стоимости</strong> &rarr;
 						</div>
 					</a>
-				</div>
+			
 			</div>
 		</section><!-- #content end -->
 
