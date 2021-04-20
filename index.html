@@ -1124,7 +1124,7 @@
 	<script>
 		function sendMail(form) {
 			let formData = new FormData(form);
-			fetch('php/HenderMail.php', {
+			fetch('php/handlerMail.php', {
 				method: 'POST',
 				body: formData
 			}).then((response) => { return response.text() })
