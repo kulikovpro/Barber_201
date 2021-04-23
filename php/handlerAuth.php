@@ -1,11 +1,12 @@
 <?php
+  header("Access-Control-Allow-Origin: *");
   session_start();
-  $mysqli = new mysqli('localhost','vladle43_0201','8O&Zjowm','vladle43_0201');
+  $mysqli = new mysqli('localhost','n91045rw_bd','o40UW2P1','n91045rw_bd');
   $email = trim(mb_strtolower($_POST['email']));
   $pass = trim($_POST['pass']);
   $result = $mysqli->query("SELECT * FROM `users` WHERE `email`='$email'");
-  $row = $result->fetch_assoc(); //Преобразуем ответ от базы данных в массив
-  //var_dump($row);
+  $row = $result->fetch_assoc();
+  var_dump($row);
   if(password_verify($pass,$row['pass'])){
     $_SESSION['name'] = $row['name'];
     $_SESSION['lastname'] = $row['lastname'];
