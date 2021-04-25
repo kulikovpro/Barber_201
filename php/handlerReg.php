@@ -1,4 +1,6 @@
 <?php
+  header("Access-Control-Allow-Origin: *");
+  session_start();
   $mysqli = new mysqli('localhost','vladle43_0201','8O&Zjowm','vladle43_0201');
   $name = $_POST['name'];
   $lastname = $_POST['lastname'];

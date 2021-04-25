@@ -1148,24 +1148,37 @@
 	<!-- Скрипт для формы авторизации
 	============================================= -->
 	<script>
+		let headerMiscIcon = document.getElementsByClassName('header-misc-icon');
+		let modalLoginForm = document.getElementById('modal-login-form');
+		let accordionTitle = document.getElementsByClassName('accordion-title');
 		function sendAuth(form){
-			$(document).on('af_complete', function(event, response) {
-			console.log(event, response);
 			let formData = new FormData(form);
 			fetch('php/handlerAuth.php',{
 				method: 'POST',
 				body: formData
 			}).then(response=>response.text())
-					.then((result)=>{
-							if (response.success) {
-								$('modal-login-form').fadeOut();
-								alert("Привет" + 'name');
-							}else {alert("Email или Пароль неверны"); return false;}
-						})
-					})
+				.then(result=>{
+					if(result === "success"){
+						headerMiscIcon.hidden = true;//убрать кнопку Войти
+						modalLoginForm.hidden = true;//убрать модальное окно
+					} else {accordionTitle.innerText += "Email или Пароль неверны"}
+					//else {alert("Email или Пароль неверны"); return false;}
+				})
 		}
 	</script>
 
+	<!-- Скрипт для формы регистрации
+	============================================= -->
+	<script>
+       function sendReg(form){
+         let formData = new FormData(form);
+         fetch('php/handlerReg.php',{
+           method: 'POST',
+           body: formData
+         }).then(response=>response.text())
+           .then(result=>console.log(result));
+       }
+     </script>-->
 </body>
 
 </html>
