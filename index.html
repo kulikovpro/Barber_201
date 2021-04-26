@@ -71,7 +71,7 @@
 
 <body class="stretched page-transition"
 	data-loader-html="<img class='infinite animated pulse' src='images/slider-logo.svg' width='300'>">
-	<h1 hidden>Дипломный проект группы 0201 «Барбершоп» testcommit</h1>
+	<h1 hidden>Дипломный проект группы 0201 «Барбершоп»</h1>
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -130,7 +130,8 @@
 								<li class="menu-item"><a class="menu-link" href="#" data-href="#contact">Контакты</a></li>
 								<li class="menu-item">
 									<a href="http://grigorevai.beget.tech" data-offset="62" data-easing="easeInOutExpo"
-										data-speed="1300" class="button button-color reverse"><i class="icon-calendar2"></i>
+										data-speed="1300" class="button button-color reverse" data-toggle="modal"
+										data-target=".bs-example-modal-lg"><i class="icon-calendar2"></i>
 										Записаться</a>
 								</li>
 							</ul>
@@ -177,7 +178,8 @@
 				============================================= -->
 				<a href="http://grigorevai.beget.tech"
 					class="button button-large button-color button-appointment d-none d-lg-block" data-offset="62"
-					data-easing="easeInOutExpo" data-speed="1300"><i class="icon-calendar2"></i>Записаться</a>
+					data-easing="easeInOutExpo" data-speed="1300" data-toggle="modal" data-target=".bs-example-modal-lg"><i
+						class="icon-calendar2"></i>Записаться</a>
 
 				<!-- Slider Social Icons
 				============================================= -->
@@ -521,8 +523,8 @@
 						</div>
 
 						<div class="col-12 center">
-							<a href="http://grigorevai.beget.tech"
-								class="button button-large button-color d-none d-lg-block "><i class="icon-calendar2"></i>
+							<a href="http://grigorevai.beget.tech" class="button button-large button-color d-none d-lg-block "
+								data-toggle="modal" data-target=".bs-example-modal-lg"><i class="icon-calendar2"></i>
 								Записаться</a>
 						</div>
 					</div>
@@ -749,9 +751,11 @@
 														<i class="icon-instagram"></i>
 													</a>
 												</div>
-												<a href="http://grigorevai.beget.tech" class="button button-large button-color m-0 w-100 text-center"
+												<a href="http://grigorevai.beget.tech"
+													class="button button-large button-color m-0 w-100 text-center"
 													data-hover-animate="fadeInDown" data-hover-animate-out="fadeOutUp"
-													data-hover-speed="400" data-hover-parent=".team">Запись</a>
+													data-hover-speed="400" data-hover-parent=".team" data-toggle="modal"
+													data-target=".bs-example-modal-lg">Запись</a>
 											</div>
 											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="400"
 												data-hover-parent=".team"></div>
@@ -793,9 +797,11 @@
 														<i class="icon-instagram"></i>
 													</a>
 												</div>
-												<a href="http://grigorevai.beget.tech" class="button button-large button-color m-0 w-100 text-center"
+												<a href="http://grigorevai.beget.tech"
+													class="button button-large button-color m-0 w-100 text-center"
 													data-hover-animate="fadeInDown" data-hover-animate-out="fadeOutUp"
-													data-hover-speed="400" data-hover-parent=".team">Запись</a>
+													data-hover-speed="400" data-hover-parent=".team" data-toggle="modal"
+													data-target=".bs-example-modal-lg">Запись</a>
 											</div>
 											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="400"
 												data-hover-parent=".team"></div>
@@ -837,9 +843,11 @@
 														<i class="icon-instagram"></i>
 													</a>
 												</div>
-												<a href="http://grigorevai.beget.tech" class="button button-large button-color m-0 w-100 text-center"
+												<a href="http://grigorevai.beget.tech"
+													class="button button-large button-color m-0 w-100 text-center"
 													data-hover-animate="fadeInDown" data-hover-animate-out="fadeOutUp"
-													data-hover-speed="400" data-hover-parent=".team">Запись</a>
+													data-hover-speed="400" data-hover-parent=".team" data-toggle="modal"
+													data-target=".bs-example-modal-lg">Запись</a>
 											</div>
 											<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="400"
 												data-hover-parent=".team"></div>
@@ -962,6 +970,38 @@
 
 			</div>
 		</section><!-- #content end -->
+
+		<!-- Форма для записи! -->
+		<div class="form-widget pt-0">
+
+			<div class="form-result"></div>
+
+			<!-- Large modal -->
+
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">Пожалуйста, введите
+									свои данные для записи:</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</div>
+							<div class="modal-body">
+								<iframe src="http://grigorevai.beget.tech" frameborder="0" width="500" height="400"></iframe>
+
+								<input type="hidden" name="prefix" value="template-contactform-">
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- конец формы для записи -->
 
 		<!-- Modal Login & Sign up
 		============================================= -->
